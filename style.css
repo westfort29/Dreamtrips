@@ -294,6 +294,7 @@ h3.service-text{
 #footer .foot_group a{
 	color:white;
 	text-decoration:none;
+	transition: all .5s;
 }
 #footer .foot_group a:hover{
 	color: #333333;
@@ -312,6 +313,7 @@ h3.service-text{
 	color: white;
 	background: #2fc4ae;
 	border-left: 1px solid white;
+	transition: all .5s;
 }
 .bs a:hover{
 	background:white;
@@ -527,6 +529,7 @@ hr.country{
 	text-decoration: none;
 	padding: 10px;
 	border: 1px solid #2fc4ae;
+	transition: all .5s;
 }
 .blog_articles_link{
 	margin-top:30px;
@@ -645,6 +648,7 @@ hr.country{
 	text-decoration: none;
 	padding: 10px;
 	border: 1px solid #2fc4ae;
+	transition: all .5s;
 }
 .main_articles_item_link{
 	margin-top:30px;
@@ -704,6 +708,7 @@ hr.country{
 	padding:4px 10px 5px 10px;
 	outline: none;
 	width: 160px;
+	transition: all .5s;
 }
 .trip_button:hover{
 	color: #2fc4ae;

@@ -46,7 +46,6 @@ $articles = get_articles_main();
 			<a class="country_point_link" href="blog.php"><div class="point text-center" >Блог </div></a>
 			<a class="country_point_link" href="countries.php"><div class="point text-center">Страны </div></a>
 			<a class="country_point_link" href="gal.php"><div class="point text-center">Галерея</div></a>
-			<!--<li><a class="nav-text" id="log">Войти</a></li>--> 
 		</div>
 	
 	</div>

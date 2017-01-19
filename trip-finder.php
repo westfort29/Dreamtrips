@@ -170,7 +170,6 @@ date_modify($nextDay, '+14 day');
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script async type="text/javascript" src="tcal.js"></script> 
-<script async type="text/javascript" src="jquery.easydropdown.min.js"></script>
 <script async type='text/javascript' src='app.js'></script>
 
 </body>

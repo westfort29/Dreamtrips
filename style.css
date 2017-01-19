@@ -1,3 +1,4 @@
+/******basic styles******/
 html {
   overflow-y: scroll;
 }
@@ -13,6 +14,7 @@ body{
 	padding:0px;
 	margin:0px;
 }
+/*******main containers*******/
 .container_wrapper{
 	width: 100%;
 	display: flex;
@@ -24,6 +26,7 @@ body{
 	border-radius:5px;
 	margin-bottom:20px;
 }
+/************top menu***********/
 #header{
 	background:url(head2.jpg);
 	background-size:100% 100% ;
@@ -57,7 +60,7 @@ div.navbar-header {
 	color:white;
 	font-family: helvetica;
 	font-family: 'Boogaloo', cursive;
-	font-size:28px;
+	font-size:22px;
 	cursor:pointer;
 	background:#2fc4ae;
 	border-radius:0px 0px 5px 5px;
@@ -82,7 +85,7 @@ div.navbar-header  p{
 	color:white;
 	height:80%;
 	cursor:pointer;
-	font-size:20px;
+	font-size:18px;
 	border-radius:20px;
 	transition: all .5s;	
 }
@@ -102,7 +105,7 @@ div.navbar-header  p{
 	cursor:pointer;
 }
 
-/*slider*/
+/***************slider***************/
 
 .slider {
   position: relative;
@@ -120,18 +123,18 @@ div.navbar-header  p{
   z-index:0;
  }
  .slogan {
-	 z-index:3;
-	 font-size:38px;
-	 position:absolute;
-	 color:white;
-	 top: 20vh;
-	 left: 15%;
-	 width: 70%;
-	 font-family: Verdana;
-	 font-style: italic;
+z-index:3;
+font-size:30px;
+position:absolute;
+color:white;
+top: 20vh;
+left: 15%;
+width: 70%;
+font-family: Verdana;
+font-style: italic;
  }
  .slogan p:first-child{
-	 font-size:48px;
+font-size:48px;
  }
 .active-slide {
     display: block;
@@ -171,16 +174,17 @@ div.navbar-header  p{
 	bottom:10px;
 }
 #scroll_down{
-	width:44px;
-	height:44px;
+	width:43px;
+	height:43px;
 	border-radius:100%;
-	background:white;
+	border: 1px solid white;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	cursor:pointer;
 	transition: all .5s;
 	opacity: .5;
+	padding-top:2px;
 }
 .scroll_up_wrapper{
 	display: none;
@@ -240,13 +244,12 @@ div.navbar-header  p{
 .service-block{
 	color:white;
 	width:28%;
-	height:145px;
+	height:135px;
 	border-radius:5px;
 	padding:15px;
 	cursor: pointer;
 	transition: all .5s;
 	min-width:360px;
-	max-width:450px;
 	border: 2px solid white;
 }
 .service-block:hover{
@@ -265,10 +268,10 @@ div.service-text{
 }
 p.service-text{
 	margin:3px;	
-	font-size:17px;
+	font-size:16px;
 }
 h3.service-text{
-	font-size:28px;
+	font-size:20px;
 	margin:3px;	
 	margin-top:5px;
 	margin-bottom:10px;
@@ -427,7 +430,7 @@ input[type=checkbox]:checked + label:before {
 	line-height: 16px;
 }
 
-	/**************WIDGETS***************/
+	/**************service insight***************/
 	
 .wiget{
 	width:40%;
@@ -572,7 +575,7 @@ hr.country{
 		
 .main_desc{
 	width: 100%;
-	min-height: 200px;
+	min-height: 50vh;
 	background: #2fc4ae;
 	display: flex;
 	align-items: center;
@@ -592,9 +595,12 @@ hr.country{
 .main_finder_date{
 	width: 100%;
 	background: white;
-	padding: 30px 10px 5px 10px;
 	border-bottom: 1px solid #2fc4ae;
-	min-height: 200px;
+	min-height: 50vh;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	
 }
 .main_finder_date_form p{
 	margin: 20px;

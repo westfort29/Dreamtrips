@@ -63,50 +63,45 @@ $gals = array();
 	</div>	
 	
 <div class="content">
-
 <div class="col-xs-<?php if ($gallery==1) echo 12; else echo 10?>">
 
 
 	<div class="country_list">
 		<?php if($images):?>
 		<?php  foreach($images as $image):?>
-		<div class="item <?=$image['location']?>">
-			<div class="img-item"><a href="<?=$dir . '/' . $image['gallery_name_en'] . '/' . $image['img_name']?>" data-lightbox="gal" data-title="<?=$image['description']?>, <?=$image['location']?>"> <img src="<?=$dir . '/' . $image['gallery_name_en'] . '/small/' . $image['img_name']?>" width="100%" height="100%"/></a>
-			<div class="img-desc"><span> <?=$image['description']?>, <?=$image['location']?></span></div>
-			</div>
+		<section class="item <?=$image['location']?>">
+			<figure class="img-item"><a href="<?=$dir . '/' . $image['gallery_name_en'] . '/' . $image['img_name']?>" data-lightbox="gal" data-title="<?=$image['description']?>, <?=$image['location']?>"> <img src="<?=$dir . '/' . $image['gallery_name_en'] . '/small/' . $image['img_name']?>" width="100%" height="100%"/></a>
+			<figcaption class="img-desc"><?=$image['description']?>, <?=$image['location']?></figcaption>
+			</figure>
 			
-		</div>
+		</section>
 		<?php endforeach;?>
 		
 		<?php else:?>
 		<div class="text-center">
-		<div class="item" onclick="location.href='?gallery=2';">
-			
+		<section class="item" onclick="location.href='?gallery=2';">
 			<div class="img-item"><img src="img/gallery/img1.jpg" width="100%" height="100%"/> 
 			<div class="img-desc-gal"><img src="img/camera.png" width="35" height="25"/> Черногория</div>
 			</div>
-		</div>
+		</section>
 		
-		<div class="item" onclick="location.href='?gallery=3';">
-			
+		<section class="item" onclick="location.href='?gallery=3';">
 			<div class="img-item"><img src="img/gallery/img2.jpg" width="100%" height="100%"/> 
 			<div class="img-desc-gal"> <img src="img/camera.png" width="35" height="25"/> Таиланд </div>
 			</div>
-		</div>
+		</section>
 		
-		<div class="item" onclick="location.href='?gallery=4';">
-			
+		<section class="item" onclick="location.href='?gallery=4';">
 			<div class="img-item"><img src="img/gallery/img3.jpg" width="100%" height="100%"/> 
-			<div class="img-desc-gal"> <img src="img/camera.png" width="35" height="25"/> Италия <div>
+			<div class="img-desc-gal"> <img src="img/camera.png" width="35" height="25"/> Италия </div>
 			</div>
+		</section>
 		</div>
-		</div>
-		</div>
-		
+	</div>
 	
 		<?php endif;?>
-	</div>
-	</div>
+</div>
+</div>
 	<?php if ($gallery!=1):?>
 <div class="col-xs-2">
 <div class="filters">
@@ -127,17 +122,15 @@ $gals = array();
 			<br>
 		<?php endforeach;?>	 
 		
-	</div>	
+</div>	
 <?php endif;?>
 </div>
 	<?php endif;?>
 	
-	
+</div>
 
 </div>
-<div class="clear"> </div>
-</div>
-</div>
+
 
 
 <?php echo $foot;?>

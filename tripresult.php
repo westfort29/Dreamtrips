@@ -80,7 +80,7 @@ else $hotelMult = 1;
 		<?php foreach ($countries as $country):?>
 		
 		<div class="panel-group">
-		<div class="panel panel-default">
+		<article class="panel panel-default">
 			<div class="panel-heading trip-result-head">
 				<div class="trip-result-desc">
 					<a href="country.php?country_name=<?=$country['name_en']?>"><h3 class="avia"><?=$country['name'];?></h3></a>
@@ -108,26 +108,26 @@ else $hotelMult = 1;
 				<div class="clear"></div>
 			</div>
 			
-		<div id="collapse<?=$country['id_country'];?>" class="panel-collapse collapse">
-		
-			<p class="text-justify"><b>Сезон: </b> <?=$country['seasons_ru'];?>. </p>
-			<p class="text-justify"><b>Аэропорты: </b> <?=$country['airports'];?>.</p>
-			<p class="text-justify"><b>Направления: </b><?=$country['places'];?>. </p>
-			<p class="text-justify"><b>Виза: </b><?=$country['visa_ru'];?> </p>
+			<div id="collapse<?=$country['id_country'];?>" class="panel-collapse collapse">
 			
-			<div class="avia-trip">
-				<p class="text-justify"> <b>Календарь цен на авиабилеты</b> (туда-обратно на 1 человека):</p>
-				<?=$country['widget_avia'];?>
+				<p class="text-justify"><b>Сезон: </b> <?=$country['seasons_ru'];?>. </p>
+				<p class="text-justify"><b>Аэропорты: </b> <?=$country['airports'];?>.</p>
+				<p class="text-justify"><b>Направления: </b><?=$country['places'];?>. </p>
+				<p class="text-justify"><b>Виза: </b><?=$country['visa_ru'];?> </p>
+				
+				<div class="avia-trip">
+					<p class="text-justify"> <b>Календарь цен на авиабилеты</b> (туда-обратно на 1 человека):</p>
+					<?=$country['widget_avia'];?>
+				</div>
+				<div class="hotel-trip">
+					<p class="text-justify"> <b>Подборка хороших отелей на любой вкус</b> (цена на двух человек за ночь): </p>
+					<?=$country['widget_hotel'];?>
+				</div>	
+				
+				<p class="text-justify clear"> <b>Подробнее</b> о том как <a href="avia.php"> покупать авиабилеты</a> и <a href="hotel.php"> бронировать номера. </a> </p>
+				
 			</div>
-			<div class="hotel-trip">
-				<p class="text-justify"> <b>Подборка хороших отелей на любой вкус</b> (цена на двух человек за ночь): </p>
-				<?=$country['widget_hotel'];?>
-			</div>	
-			
-			<p class="text-justify clear"> <b>Подробнее</b> о том как <a href="avia.php"> покупать авиабилеты</a> и <a href="hotel.php"> бронировать номера. </a> </p>
-			
-		</div>
-		</div>
+		</article>
 		</div>
 		<?php endforeach;?>
 		<?php else:?>

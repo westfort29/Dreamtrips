@@ -40,7 +40,7 @@ date_modify($nextDay, '+14 day');
 	</div>
 	
 	<div class="finder">
-		<div class="finder_wrapper">
+		<section class="finder_wrapper">
 		<form method="get" class="text-center" action="tripresult.php">
 
 			
@@ -162,7 +162,7 @@ date_modify($nextDay, '+14 day');
 			</div>
 			</div>
 		</form>	
-		</div>
+		</section>
 	</div>
 </div>
 

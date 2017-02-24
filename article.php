@@ -42,12 +42,12 @@ $articles = get_article($blog);
 		</a>	
 	</div>
 				
-		<div class="blog">
+		<section class="blog">
 		<div class="blog_wrapper">
 
 			<div class="blog_content_wrapper">
 				
-				<div class="blog_content_secondary">
+				<aside class="blog_content_secondary">
 					<div class="blog_content_secondary_item">
 						<script charset="utf-8" src="//www.travelpayouts.com/widgets/a00dc2deac51b76691cbf5b62c33ee4d.js?v=871" async></script>
 					</div>
@@ -60,18 +60,16 @@ $articles = get_article($blog);
 					<div class="blog_content_secondary_item">
 						<a target="_blank" href="http://c18.travelpayouts.com/click?shmarker=62232&promo_id=1241&source_type=banner&type=click"><img src="http://c18.travelpayouts.com/content?promo_id=1241&shmarker=62232&type=init" alt="Турция - 240*400" width="250" height="410"></a>
 					</div>
-				</div>
+				</aside>
 				
 				<?php  foreach($articles as $article):?>	
-					<div class="blog_articles">
-						<h3><a href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h3>
+					<article class="blog_articles">
+						<h3 class="blog_articles__heading"><a class="blog_articles__heading__link" href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h3>
 						<p class="article_date"><?=$article['data']?></p>
 						<img  src="img/articles/<?=$article['img_name']?>" width="100%" height="350" />
 						<p><?=$article['text']?></p>
-					</div>
+					</article>
 				<?php endforeach;?>
-				
-				
 				
 				<div class="clear"> 
 				</div>
@@ -79,7 +77,7 @@ $articles = get_article($blog);
 			</div>
 		
 		</div>
-		</div>
+		</section>
 
 </div>
 

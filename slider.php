@@ -1,10 +1,10 @@
 <?php
  $slider = '
- <div class="slider">
+ <section class="slider">
  
 	<div class="slogan">
-		<p class="text-center">Путешествия – это сказка.</p>
-		<p class="text-center">Что может быть лучше, чем стать её главным героем.</p>
+		<p class="slogan__header text-center">Путешествия – это сказка.</p>
+		<p class="slogan__text text-center">Что может быть лучше, чем стать её главным героем.</p>
 	</div>
     <div class="slide active-slide slide_1" >
 	  
@@ -28,18 +28,13 @@
         </div>
  
     </div> 
-</div>
+</section>
 <div class="scroll_down_wrapper">
 	<div id="scroll_down">
 		<img src="img/arrow-down.png"/>
 	</div>
 </div>
 
-<div class="scroll_up_wrapper" id="scroll_up_wrapper">
-	<div id="scroll_up">
-		<img src="img/arrow-up.png"/>
-	</div>
-</div>
 '
 
 ?>

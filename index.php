@@ -32,73 +32,67 @@ $articles = get_articles_main();
 	<title> Dream Trip - начните свое путешествие здесь </title>
 </head>
 <body>
-<div class="navigation_content_wrapper" id="navigation_content_wrapper">
-	<div class="navigation_wrapper">
-		<div class="navbar_header_wrapper">
-		<a href="index.php">
-			<div class="navbar-header">
-				<p><img src="dream-2.png" width="40" height="50" />Dream Trip</p>
-			</div>
-		</a>
-		</div>
-		<div class="navigation">	
-			<a class="country_point_link" href="trip-finder.php"><div class="point text-center">Подбор отдыха</div></a>
-			<a class="country_point_link" href="blog.php"><div class="point text-center" >Блог </div></a>
-			<a class="country_point_link" href="countries.php"><div class="point text-center">Страны </div></a>
-			<a class="country_point_link" href="gal.php"><div class="point text-center">Галерея</div></a>
-		</div>
-	
+
+<div id="navigation-wrapper">
+	<div class="navigation-wrapper">
+		<a class="logo" href="index.php"><img src="dream-2.png" width="40" height="50" />Dream Trip</a>
+		
+		<nav class="main-menu">
+			<a class="main-menu__link" href="trip-finder.php">Подбор отдыха</a>
+			<a class="main-menu__link" href="blog.php">Блог</a>
+			<a class="main-menu__link" href="countries.php">Страны</a>
+			<a class="main-menu__link" href="gal.php">Галерея</a>
+		
+		</nav>
 	</div>
-	</div>
+</div>
+
 <?php echo $slider;?>
 <?php echo $services; ?>
 
 
-<div class="main_desc">
-	<div class="main_desc_text">
-		<p>DreamTrip — проект, который призван помочь путешественникам. Наш сайт поможет Вам определиться с тем куда поехать на отдых, расскажет самое интересное о странах и местах отдыха в мире и научит Вас как можно выгодно отдохнуть. Путешествуйте с нами.</p>
-	</div>
-</div>
+<article class="main_desc">
+		<p class="main_desc_text">DreamTrip — проект, который призван помочь путешественникам. 
+		Наш сайт поможет Вам определиться с тем куда поехать на отдых, расскажет самое интересное о странах и местах отдыха в мире и научит Вас как можно выгодно отдохнуть. 
+		Путешествуйте с нами.</p>
+</article>
 
 <div class="main_finder_date">
 	<div class="text-center">
-		<h3>Узнать где сезон по датам: </h3>
+		<h3 class="main_finder_date__header">Узнать где сезон по датам: </h3>
 	
 		<div class="main_finder_date_form">
 			<form method="get" action="tripresult.php">	
-				<p>
 					<input type="text" class="tcal" id="date-to" oninput="minDateBack()" name="date-to" value="<?=date_format($day, 'd.m.Y');?>"/>  –  
 					<input type="text" class="tcal" id="date-back" name="date-back" value="<?=date_format($nextDay, 'd.m.Y');?>"/>
-				</p>
-				<p>
+				
 					<button class="trip_button" type="submit">Узнать</button>
-				</p>
 			</form>
 		</div>
-		
 	</div>
 </div>
 
-<div class="main_articles_wrapper">
+<section class="main_articles_wrapper">
 	<div class="main_articles">
 		<?php  foreach($articles as $article):?>
+		
 			<div class="main_articles_item">
-			<div class="text-center">
-				<a href="article.php?blog=<?=$article['id']?>">
-					<img class="main_articles_item_img" src="img/articles/<?=$article['img_name']?>"width="450" height="250" />
-				</a>
-				<h2><a href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h2>
-				<p class="article_date"><?=$article['data']?><p>
-				<p class="text-justify"><?=$article['preview']?> </p>
-				<div class="main_articles_item_link">
-							<a href="article.php?blog=<?=$article['id']?>">Читать дальше</a>
+			<article>
+				<div class="main_article_img">
+					<img class="main_article_img" src="img/articles/<?=$article['img_name']?>"/>
 				</div>
-			</div>
-			<hr>			
-			</div>
+				<div class="main_article_desc">
+					<h2><a href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h2>
+					<p class="article_date"><?=$article['data']?><p>
+					<p class="text-justify"><?=$article['preview']?> </p>
+					<a class="main_articles_item_link" href="article.php?blog=<?=$article['id']?>">Читать дальше</a>
+				</div>
+				<div class="clear"></div>
+			</article>
+			</div>		
 		<?php endforeach;?>
 	</div>
-</div>
+</section>
 
 
 <?php echo $foot;?>

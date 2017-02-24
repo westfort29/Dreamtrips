@@ -45,6 +45,9 @@ var main = function()
 	
 			/*COUNTRY MENU FIXED +++ fixed NAVIGATION*/
 	
+	if (window.pageYOffset > 210){
+		$('#navigation-wrapper').addClass('nav_fixed');
+	}
 	$(document).scroll(function(){
 		if ($('#country_point').hasClass('fixed') && (window.pageYOffset < 210)) {
 			$('#country_point').removeClass('fixed');
@@ -52,11 +55,11 @@ var main = function()
 		else if (window.pageYOffset > 210) {
 			$('#country_point').addClass('fixed');
 		}
-		if ($('#navigation_content_wrapper').hasClass('nav_fixed') && (window.pageYOffset < 5)) {
-			$('#navigation_content_wrapper').removeClass('nav_fixed');
+		if ($('#navigation-wrapper').hasClass('nav_fixed') && (window.pageYOffset < 5)) {
+			$('#navigation-wrapper').removeClass('nav_fixed');
 		} 
 		else if (window.pageYOffset > 5) {
-			$('#navigation_content_wrapper').addClass('nav_fixed');;
+			$('#navigation-wrapper').addClass('nav_fixed');
 		}
 	});
 };

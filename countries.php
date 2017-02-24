@@ -46,12 +46,11 @@ $countries_ru = array();
 		
 		<div class="country_list">
 			<?php foreach ($countries as $country):?>
-				<a href="country.php?country_name=<?=$country['name_en']?>">
-				<div class="country_item" id="<?=$country['name'];?>"style="background:url(img/countries/<?=$country['img_name']?>); background-size: 100% 100%;">
-					<div class="country_name">
-						<p class="text-center"> <?=$country['name']?></p>
-					</div>
-				</div>
+				<a class="country_item" 
+					id="<?=$country['name'];?>"
+					style="background:url(img/countries/<?=$country['img_name']?>); background-size: 100% 100%;" 
+					href="country.php?country_name=<?=$country['name_en']?>">
+					<p class="text-center country_name"> <?=$country['name']?></p>
 				</a>
 			<?php endforeach;?>
 		</div>

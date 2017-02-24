@@ -7,32 +7,34 @@
 		<img src="img/arrow-up.png"/>
 	</div>
 </div>
- <div id="footer">
+ <section class="footer_wrapper">
+ <footer class="main-footer">
 	<div class="foot_group">
-		<p class="text-center"> <img src="dream-2.png" width="115" height="150"/></p>
+		<p> <img src="dream-2.png" width="115" height="150"/></p>
 	</div>
 	<div class="foot_group">
 		<h4> Все для путешествий</h4>
-			<p> <a href="avia.php">Авиабилеты</a></p>
-			<p> <a href="hotel.php">Отели</a></p>
-			<p> <a href="car-rent.php">Аренда авто</a></p>
-			<p> <a href="transfer.php">Трансфер</a></p>
+			<p> <a class="main-footer__link" href="avia.php">Авиабилеты</a></p>
+			<p> <a class="main-footer__link" href="hotel.php">Отели</a></p>
+			<p> <a class="main-footer__link" href="car-rent.php">Аренда авто</a></p>
+			<p> <a class="main-footer__link" href="transfer.php">Трансфер</a></p>
 	</div>
 	<div class="foot_group">
 		<h4> Наши сервисы</h4>
-			<p> <a href="trip-finder.php">Подбор отдыха</a></p>
-			<p> <a href="gal.php">Галерея</a></p>
-			<p> <a href="countries.php">Информация по странам</a></p>
-			<p> <a href="blog.php">Блог</a></p>
+			<p> <a class="main-footer__link" href="trip-finder.php">Подбор отдыха</a></p>
+			<p> <a class="main-footer__link" href="gal.php">Галерея</a></p>
+			<p> <a class="main-footer__link" href="countries.php">Информация по странам</a></p>
+			<p> <a class="main-footer__link" href="blog.php">Блог</a></p>
 	</div>
 	<div class="foot_group">
 		<h4> Контакты</h4>
-			<p>	<a href="#">Мы Вконтакте</a></p>
-			<p> <a href="">westfort29@gmail.com</a></p>
+			<p>	<a class="main-footer__link" href="#">Мы Вконтакте</a></p>
+			<p> <a class="main-footer__link" href="">westfort29@gmail.com</a></p>
 	</div>
-	<div class="clear"></div>
-	<p class="text-center"> Все права защищены </p>
-</div>
+	
+	</footer>
+	<p class="copyright text-center"> Все права защищены </p>
+</section>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {

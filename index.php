@@ -35,7 +35,7 @@ $articles = get_articles_main();
 
 <div id="navigation-wrapper">
 	<div class="navigation-wrapper">
-		<a class="logo" href="index.php"><img src="dream-2.png" width="40" height="50" />Dream Trip</a>
+		<a class="logo" href="index.php"><img src="dream-2.png" width="40" height="50" alt="logo"/>Dream Trip</a>
 		
 		<nav class="main-menu">
 			<a class="main-menu__link" href="trip-finder.php">Подбор отдыха</a>
@@ -72,14 +72,14 @@ $articles = get_articles_main();
 	</div>
 </div>
 
-<section class="main_articles_wrapper">
+<div class="main_articles_wrapper">
 	<div class="main_articles">
 		<?php  foreach($articles as $article):?>
 		
 			<div class="main_articles_item">
 			<article>
 				<div class="main_article_img">
-					<img class="main_article_img" src="img/articles/<?=$article['img_name']?>"/>
+					<img class="main_article_img" src="img/articles/<?=$article['img_name']?>" alt="<?=$article['img_name']?>"/>
 				</div>
 				<div class="main_article_desc">
 					<h2><a href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h2>
@@ -92,7 +92,7 @@ $articles = get_articles_main();
 			</div>		
 		<?php endforeach;?>
 	</div>
-</section>
+</div>
 
 
 <?php echo $foot;?>

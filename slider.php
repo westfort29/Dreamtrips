@@ -1,6 +1,6 @@
 <?php
  $slider = '
- <section class="slider">
+ <div class="slider">
  
 	<div class="slogan">
 		<p class="slogan__header text-center">Путешествия – это сказка.</p>
@@ -28,10 +28,10 @@
         </div>
  
     </div> 
-</section>
+</div>
 <div class="scroll_down_wrapper">
 	<div id="scroll_down">
-		<img src="img/arrow-down.png"/>
+		<img src="img/arrow-down.png" alt="arrow-down"/>
 	</div>
 </div>
 

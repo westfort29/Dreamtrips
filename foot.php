@@ -10,7 +10,7 @@
  <section class="footer_wrapper">
  <footer class="main-footer">
 	<div class="foot_group">
-		<p> <img src="dream-2.png" width="115" height="150"/></p>
+		<p> <img src="dream-2.png" width="115" height="150" alt="Dream Trip"/></p>
 	</div>
 	<div class="foot_group">
 		<h4> Все для путешествий</h4>

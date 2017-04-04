@@ -16,7 +16,7 @@
 				<p class="service-text text-center"> Как бронировать жилье и на что обращать внимание</p>
 			</div>
 		</a>
-		
+		 
 		<!--<a href="car-rent.php" class="service-block">
 			<div class="service-text-block">
 				<h3 class="service-text-header text-center"><img height="50" width="50" class="icon" src="img/icons/car-rent.png" alt="car-rent" /> Аренда машины</h3>

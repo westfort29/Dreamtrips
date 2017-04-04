@@ -19,7 +19,7 @@ date_modify($nextDay, '+14 day');
 
 $articles = get_articles_main();
 ?>
-
+ 
 <!DOCTYPE html>
 <html>
 <head>

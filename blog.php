@@ -59,7 +59,7 @@ global $count_pages;
 					<div class="blog_articles">
 						<h3 class="blog_articles__heading"><a class="blog_articles__heading__link" href="article.php?blog=<?=$article['id']?>"><?=$article['heading']?> </a></h3>
 						<p class="article_date"><?=$article['data']?></p>
-						<img class="blog_articles__img" src="img/articles/<?=$article['img_name']?>" width="100%" height="350" />
+						<img class="blog_articles__img" src="img/articles/<?=$article['img_name']?>" width="100%" height="350" alt="<?=$article['img_name']?>"/>
 						<p><?=$article['preview']?></p>
 						<div class="blog_articles_link">
 							<a class="blog_articles__link" href="article.php?blog=<?=$article['id']?>">Читать дальше</a>

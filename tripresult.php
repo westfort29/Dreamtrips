@@ -103,7 +103,7 @@ else $hotelMult = 1;
 					<a data-toggle="collapse" href="#collapse<?=$country['id_country'];?>"><p class="text-justify">Подробнее</p></a>
 				</div>
 				<div class="trip-result-img">
-					<img  src="img/countries/<?=$country['img_name']?>"width="100%" height="265" />
+					<img  src="img/countries/<?=$country['img_name']?>"width="100%" height="265" alt="<?=$country['img_name']?>" />
 				</div>
 				<div class="clear"></div>
 			</div>

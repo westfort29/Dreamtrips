@@ -70,7 +70,7 @@ $gals = array();
 		<?php if($images):?>
 		<?php  foreach($images as $image):?>
 		<section class="item <?=$image['location']?>">
-			<figure class="img-item"><a href="<?=$dir . '/' . $image['gallery_name_en'] . '/' . $image['img_name']?>" data-lightbox="gal" data-title="<?=$image['description']?>, <?=$image['location']?>"> <img src="<?=$dir . '/' . $image['gallery_name_en'] . '/small/' . $image['img_name']?>" width="100%" height="100%"/></a>
+			<figure class="img-item"><a href="<?=$dir . '/' . $image['gallery_name_en'] . '/' . $image['img_name']?>" data-lightbox="gal" data-title="<?=$image['description']?>, <?=$image['location']?>"> <img src="<?=$dir . '/' . $image['gallery_name_en'] . '/small/' . $image['img_name']?>" width="100%" height="100%" alt="<?=$image['img_name']?>"/></a>
 			<figcaption class="img-desc"><?=$image['description']?>, <?=$image['location']?></figcaption>
 			</figure>
 			

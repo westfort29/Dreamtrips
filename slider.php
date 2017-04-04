@@ -13,7 +13,7 @@
         </div>
 		    
     </div>
-
+ 
     <div class="slide slide_2">
 	  
         <div class="slider-cont">

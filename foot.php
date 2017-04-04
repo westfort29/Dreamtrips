@@ -4,7 +4,7 @@
  
 <div class="scroll_up_wrapper" id="scroll_up_wrapper">
 	<div id="scroll_up">
-		<img src="img/arrow-up.png"/>
+		<img src="img/arrow-up.png" alt="scroll top"/>
 	</div>
 </div>
  <section class="footer_wrapper">

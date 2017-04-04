@@ -5,7 +5,7 @@
 	
 	<div id="navigation-wrapper">
 	<div class="navigation-wrapper">
-		<a class="logo" href="index.php"><img src="dream-2.png" width="40" height="50" />Dream Trip</a>
+		<a class="logo" href="index.php"><img src="dream-2.png" width="40" height="50" alt="logo" />Dream Trip</a>
 		
 		<nav class="main-menu">
 			<a class="main-menu__link" href="trip-finder.php">Подбор отдыха</a>
